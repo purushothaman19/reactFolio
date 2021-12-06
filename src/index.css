@@ -1,0 +1,110 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  -webkit-animation: fadein 1s ease-out;
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+   -o-animation: fadein 2s; /* Opera < 12.1 */
+      animation: fadein 2s;
+      height: 100%;
+}
+
+span, p:not("#single-bio") {
+  font-size: 1rem !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.MuiPaper-elevation1 {
+  height: 100%;
+  position: relative;
+}
+
+.MuiCardActions-spacing{
+  margin-top: 2%;
+  position: absolute;
+  bottom: 0;
+}
+
+.MuiTypography-root{
+  padding-bottom: 10%;
+}
+
+.ant-card-hoverable{
+  height: 100%;
+}
+
+
+#contactPage .MuiTypography-root{
+  padding-bottom: 0%;
+}
+
+span.MuiListItemText-primary{
+  font-family: 'Itim', cursive;
+  font-size: 1rem !important;
+}
+
+p.MuiListItemText-secondary{
+  font-size: xx-large !important;
+  color:cornflowerblue;
+}
+
+h5{
+  padding-bottom: 5%;
+}
+
+ul.MuiList-root{
+  width: 100%;
+  position: relative;
+  padding: 5%;
+  display: contents;
+}
+
+#contactPage{
+  margin: auto 20%;
+}
+
+/* .row.detailsA{
+  display: flex;
+  justify-content: center;
+} */
+
+div.details-li{
+  margin: 4%;
+  position: relative;
+}
+
+
+.topic{
+  padding: 5% 1%;
+}
+
+.middleContact{
+  margin: 15% auto ;
+}
+
+.detailsA a{
+  color: black !important;
+}
+
+.detailsA a:hover{
+  color: hotpink !important;
+}
+
+.icons8 img{
+  margin: 15% !important;
+}
+

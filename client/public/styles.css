@@ -1,0 +1,225 @@
+
+html{
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+#root{
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+
+.top{
+  position:relative;
+  height: 40%;
+  background-color: #444444;
+  text-align: center;
+  font-family: 'Oswald';
+}
+
+.top-down {
+  margin: 2% 5%;
+}
+
+h1{
+    /* width: 100%; */
+    padding: 3%;
+    color: white;
+    margin: 0;
+}
+
+h1:hover{
+  opacity: 0.8;
+}
+
+#navbarNav{
+  flex-direction: column;
+  display: flex;
+}
+
+@media screen and (min-width: 991px) {
+  #home{
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  #top-navbar{
+    text-align: center;
+  }
+
+.navbar li {
+  width: 100%;
+  font-size: 1.3rem;
+}
+
+}
+
+.middle{
+  padding-bottom:10%;
+}
+
+.container{
+  /* background-color: #EDEDED; */
+  width: 80%;
+  align-items: center;
+}
+
+.container button{
+  width: 25%;
+  margin-left: 60%;
+}
+
+img:not(.typeCard) {
+  width: 50%;
+  margin: 5% 25%;
+  position: relative;
+}
+
+#p-text{
+  text-align: center;
+}
+
+#about-text{
+  text-align: justify;
+  padding: 0.5% 15%;
+  font-family: 'Merriweather', serif;
+}
+
+.btn-dark{
+  color: #fff;
+  background-color: #DA0037;
+  border-color: #DA0037;
+  position: relative;
+}
+
+
+@media screen and (max-width: 991px) {
+  .container button{
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+#copyrigths{
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+/* ------- THEMES ----------- */
+
+.top-themes{
+  margin: 5% 7%;
+}
+
+.middle-themes{
+  margin: 5% 7%;
+}
+
+.themes-img, .themes-text{
+  margin-bottom: 15%;
+}
+
+
+@media screen and (min-width: 767px) {
+  #python-text{
+    padding-right: 15%;
+  }
+
+  #flutter-text{
+    padding-left: 15%;
+  }
+
+  #html-text{
+    padding-right: 15%;
+  }
+
+  .small-img{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .big-img{
+    display: none;
+  } 
+
+  .themes-text{
+    width: 100%;
+  }
+}
+
+/* ------- PROJECTS --------- */
+
+.dones{
+    margin: 5% 5%;
+    width: 90%;
+}
+
+.works-li{
+    position: relative;
+    margin-right: 0px;
+    background-blend-mode: multiply;
+}
+
+@media screen and (min-width: 991px) {
+  .works-li{
+    padding: 5% 5%;
+  }
+}
+
+.work-image{
+    width: 100%;
+    margin: 1%;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    position: relative;
+    margin-right: 2%;
+    background-color: gray;
+}
+
+.overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    text-align: left;
+}
+
+.works-li:hover .work-image {
+    opacity: 0.1;
+    transition: 0.5s;
+}
+
+.works-li:hover .overlay {
+    opacity: 1;
+    top: 70%;
+    transition: 0.5s;
+}
+
+.text {
+    width: 87%;
+    color: black;
+    font-weight:bolder;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#PROJECTS {
+  color: black;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
