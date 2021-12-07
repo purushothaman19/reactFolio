@@ -38,7 +38,7 @@ if (app.get('env') === 'production') {
   app.set('trust proxy', 1) // trust first proxy
   sess.cookie.secure = true // serve secure cookies
   app.use(express.static('client/build'));
-  app.get('/', (request, response) => {
+  app.get('*', (request, response) => {
     response.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
@@ -99,6 +99,10 @@ Projects.find({}, function (err, docs) {
 app.get("/api", (req, res) => {
   res.json({ docs: allProjects });
 });
+
+app.get("/", (req, res) => {
+  res.redirect("*");
+}
 
 // app.get('*', (req, res) => {
 //   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
