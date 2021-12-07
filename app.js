@@ -99,7 +99,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
-app.listen(port, function () {
+app.listen(process.env.PORT || port, function () {
   console.log(`Started building at ${port}`);
 });
 
