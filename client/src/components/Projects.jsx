@@ -38,7 +38,7 @@ class Project extends React.Component {
 
         const { items } = this.state;
         // console.log(items);
-        const loadingStyle = { "padding": "10%" }
+        const loadingStyle = { "padding": "10%", "textAlign": "center" };
 
         if (!this.state.isLoaded) {
             return <div style={loadingStyle}> Loading.... </div>
