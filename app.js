@@ -34,8 +34,13 @@ var sess = {
 }
 
 if (app.get('env') === 'production') {
+  console.log("here!");
   app.set('trust proxy', 1) // trust first proxy
   sess.cookie.secure = true // serve secure cookies
+  app.use(express.static('client/build'));
+  app.get('*', (request, response) => {
+    response.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
 }
 
 app.use(session(sess));
@@ -95,9 +100,9 @@ app.get("/api", (req, res) => {
   res.json({ docs: allProjects });
 });
 
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
+// });
 
 app.listen(process.env.PORT || port, function () {
   console.log(`Started building at ${port}`);
