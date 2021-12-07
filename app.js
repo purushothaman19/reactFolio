@@ -40,7 +40,7 @@ if (app.get('env') === 'production') {
 
 app.use(session(sess));
 
-app.use(express.static(path.resolve(__dirname, '../client/build')));
+// app.use(express.static(path.resolve(__dirname, '../client/build')));
 
 const mongoPassword = "ZpKKfFH-mP.@2DU";
 
