@@ -12,7 +12,7 @@ class Project extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:3001/api", {
+        fetch(window.location.href + "api", {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
