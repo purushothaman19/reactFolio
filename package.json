@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app.js",
     "build": "cd client && npm install && npm run build",
-    "server": "nodemon index.js --ignore client",
+    "server": "nodemon app.js --ignore client",
     "client": "npm start --prefix client"
   },
   "author": "",
