@@ -44,7 +44,7 @@
     "window-popup": "^1.1.0"
   },
   "engines": {
-    "node": "^14.17.6"
+    "node": "14.17.6"
   },
   "devDependencies": {
     "typescript": "3.3.3"
